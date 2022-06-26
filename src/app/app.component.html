@@ -10,14 +10,21 @@
 
         </ul>
       </div>
+
     <div class="section-div"><img class="section-img" src="../assets/blank-profile-picture-gbda33b1ef_640.png"></div>
      <div class="section-div2">
       <h1>Daniel Oto Diaz</h1>
       <h1>FrontEnd Developer</h1>
     </div>
+
     <div class="button-div">
-      <img class="img-button" src="../assets/down-arrow .png">
+      <img (click)="activeSection2()" class="img-button" src="../assets/down-arrow .png">
     </div>
+
+    <section class="section2" *ngIf="section2Active">
+      <div>holis</div>
+    </section>
+
   </section>
   </div>
 

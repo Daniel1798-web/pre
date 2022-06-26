@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'pre';
+  title = 'pre';  
+  section2Active= false;
+
+   activeSection2(){
+    this.section2Active = !this.section2Active
+    
+  }
 }
