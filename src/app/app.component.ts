@@ -26,5 +26,11 @@ export class AppComponent {
 
   activeAboutMe(){
     this.section2Active = true
+    if(this.arrow === this.bottomArrow){
+      return this.arrow = this.upArrow
+    }
+    else{
+     return this.arrow = this.upArrow
+    }
   }
 }
