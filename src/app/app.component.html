@@ -4,7 +4,7 @@
     <section class="section1">
       <div class="nav-bar">
         <ul>
-          <li>About me</li>
+          <li (click)="activeAboutMe()">About me</li>
           <li>Skills</li>
           <li>Contact</li>
 
@@ -18,12 +18,12 @@
     </div>
 
     <div class="button-div">
-      <img (click)="activeSection2()" class="img-button" src="../assets/down-arrow .png">
+      <img (click)="activeSection2()" class="img-button" [src]="arrow">
     </div>
 
     <section class="section2" *ngIf="section2Active">
       <div class="section2-div1">
-        <h1>ASASSSAS</h1>
+        <h1 >ASASSSAS</h1>
       </div>
     </section>
 
