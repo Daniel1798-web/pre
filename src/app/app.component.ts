@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pre';  
-  section2Active= false;
+  section2Active:boolean = false;
+  section2Up:boolean = false
 
   arrow:string="../assets/down-arrow .png"
 
@@ -17,9 +18,11 @@ export class AppComponent {
    activeSection2(){
     this.section2Active = !this.section2Active
     if(this.arrow === this.bottomArrow){
+      this.section2Up = false
       return this.arrow = this.upArrow
     }
     else{
+      this.section2Up = true
      return this.arrow = this.bottomArrow
     }
   }

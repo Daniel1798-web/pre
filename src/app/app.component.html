@@ -17,19 +17,21 @@
       <h1>FrontEnd Developer</h1>
     </div>
 
+   
+
     <div class="button-div">
       <img (click)="activeSection2()" class="img-button" [src]="arrow">
     </div>
 
-   
+    
 
   </section>
-  <section class="section2" *ngIf="section2Active">
+  <section class="section2" [class.active]="section2Active" *ngIf="section2Active">
     <div class="section2-div1">
       <span></span>
       <h1 >ASASSSAS</h1>
     </div>
   </section>
   </div>
-
+  
 </div>
