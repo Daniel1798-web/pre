@@ -1,37 +1,23 @@
-<div class="dad">
-  <div class="hijo">
 
-    <section class="section1">
-      <div class="nav-bar">
-        <ul>
-          <li (click)="activeAboutMe()">About me</li>
-          <li>Skills</li>
-          <li>Contact</li>
-
-        </ul>
-      </div>
-
-    <div class="section-div"><img class="section-img" src="../assets/blank-profile-picture-gbda33b1ef_640.png"></div>
-     <div class="section-div2">
-      <h1>Daniel Oto Diaz</h1>
-      <h1>FrontEnd Developer</h1>
-    </div>
-
-   
-
-    <div class="button-div">
-      <img (click)="activeSection2()" class="img-button" [src]="arrow">
-    </div>
 
     
 
+<div class="dad">
+  <div class="hijo">
+   <app-header class="header"></app-header>
+<main>
+  
+    <section class="section1">
+      <app-part1 ></app-part1>
+    </section>
+
+
+  <section >
+    
+    <app-skills></app-skills>
+   
   </section>
-  <section class="section2" [class.active]="section2Active" *ngIf="section2Active">
-    <div class="section2-div1">
-      <span></span>
-      <h1 >ASASSSAS</h1>
-    </div>
-  </section>
+</main>
   </div>
   
 </div>

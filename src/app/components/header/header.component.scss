@@ -1,0 +1,28 @@
+.nav-bar{
+    width: 100%;
+   
+}
+
+.nav-bar ul{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
+
+
+li:hover{
+    color: #A27B5C;
+
+}
+
