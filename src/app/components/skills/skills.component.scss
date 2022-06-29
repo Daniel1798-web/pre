@@ -35,6 +35,24 @@
     filter: drop-shadow(5px 15px 100px rgba(109,109,109,.4));
 }
 
+
+.divImg{
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+}
 .imgIcon{
     width: 50px;
+}
+
+.divTitle{
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
+}
+
+.divText{
+    display: flex;
+    justify-content: center;
+    margin-top:10px ;
 }
