@@ -1,10 +1,10 @@
 
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #DCD7C9;
+    color: #000000;
     margin: 0;
     padding: 0;
-    background-color: #fbfbfb;
+    background-color: #fff;
 }
 
 .dadSkills{
@@ -33,6 +33,7 @@
     border-radius: 20px;
     background-color: #fff;
     filter: drop-shadow(5px 15px 100px rgba(109,109,109,.4));
+
 }
 
 
@@ -40,19 +41,34 @@
     display: flex;
     justify-content: center;
     margin-top:10px ;
+    height: 100px;
 }
 .imgIcon{
     width: 50px;
 }
 
 .divTitle{
+    margin: 0 10px 10px;
     display: flex;
     justify-content: center;
-    margin-top:10px ;
 }
 
 .divText{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin-top:10px ;
+}
+
+.divText p{
+    margin: 0 10px 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media (width:540px){
+    .boxi{
+        filter: drop-shadow(5px 15px 100px rgba(109,109,109,.4));
+
+    }
 }
