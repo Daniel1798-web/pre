@@ -3,12 +3,21 @@
     width: 100%;
 }
 
+
+.title1{
+    font-size: 34px;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
 .section1{
     display: flex;
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .divCard{
     width: 60%;
@@ -19,6 +28,18 @@
     justify-content: center;
     border-radius: 20px;
     margin: 25px;
+    align-items: center;
+    &-rick{
+        background-color: rgb(23, 24, 23);
+    }
+    &-vue{
+        background-color: #6f9736;
+    }
+}
+
+.contain{
+    font-family: Poppins,sans-serif;
+
 }
 
 .title{
@@ -28,9 +49,22 @@
 }
 
 
+.space{
+    width: 150px;
+    border-bottom: 6px solid #ffffff;
+}
+
+
 .textP{
     color: #fff;
-    font-size: 14px;
+   
+}
+
+.textP2{
+    text-decoration: underline;
+    text-align: left;
+    margin: 0;
+    color:#fff ;
 }
 
 .enlace{
@@ -41,12 +75,29 @@
     max-height: 240px;
 }
 
+.imgc2{
+    max-height: 240px;
+}
+
 @media(max-width:840px){
     .divCard{
         width: 100%;
     }
 
+    .textP{
+        text-align: center;
+    }
+
+    .textP2{
+        text-align: center;
+    }
+
     .imgc{
+        border-radius: 50px;
+        width: auto;
+    }
+
+    .imgc2{
         border-radius: 50px;
         width: auto;
     }
