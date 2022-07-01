@@ -10,7 +10,7 @@ export class SkillsComponent implements OnInit {
   tsText:string = "It was difficult to learn but every day you discover something great like not using 'any' ";
   jsText:string = "The first tool I learned in web development, with infinite uses, the most solid base";
   vueText:string = "It's lightweight, fast, but I didn't like its syntax and the community is small, it was the first framework I learned";
-  bugsText:string = "They accompany you from the first day, to exterminate them you have to learn to love them, or at least love the process to solve them, they just need love";
+  bugsText:string = "They accompany you from the first day. to exterminate them you have to learn to love them, or at least love the process to solve them. they just need love...";
 
   constructor() { }
 
