@@ -6,15 +6,21 @@ position: sticky;
 top: 0;
 background-color: #fff;
 z-index: 5;
-
+box-shadow: 0px 3px 2px #c5c5c5;
 }
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+    color: #9d9d9d ;
+}
+
 .nav-bar{
     height: 80px;
     display: flex;
-    width: 80%;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    margin: 0 40px;
     z-index: 5;
 }
 
@@ -39,5 +45,17 @@ z-index: 5;
 li:hover{
     color: #A27B5C;
 
+}
+
+.patititaDiv{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.patitita{
+    margin: 0;
+    width: 100px;
+    height: 100px;
 }
 

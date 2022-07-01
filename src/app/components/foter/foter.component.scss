@@ -1,0 +1,33 @@
+.footer{
+    background-color: #d9d9d9;
+    height: 1rem;
+    margin-top: -50px;
+    padding: 80px 25px 35px;
+    display: flex;
+    align-items: center;
+}
+
+
+.space{
+    width: 80%;
+    border-bottom: 3px solid #ffffff;
+}
+
+.cos{
+    width: 90%;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.images{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgG{
+    margin: 10px;
+}

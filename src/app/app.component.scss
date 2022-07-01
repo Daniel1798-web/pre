@@ -8,7 +8,10 @@
 
 }
 
-
+html,body{
+    margin: 0;
+    padding: 0;
+}
 
 .dad{
     margin: 20px auto;
@@ -19,6 +22,13 @@
     justify-content: flex-end;
     flex-direction: column;
 
+}
+
+.f{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    bottom: 0;
+    box-shadow: -1px 3px 2px #b9b9b9
 }
 
 .header{
@@ -78,9 +88,13 @@
     width: 200px;
 }
 
+
 @media (max-width: 840px){
     .dad{
         width: 100%;
+    }
+    .section1{
+        height: auto;
     }
 }
 
@@ -90,10 +104,11 @@
         margin: 0px;
         padding: 0px;
     }
-
+    
 
     .section1{
-        height: calc(45vh - 60px);
+        height: auto;
+
         justify-content: flex-start;
 
     }
