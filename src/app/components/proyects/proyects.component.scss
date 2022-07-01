@@ -11,6 +11,10 @@
     color: black;
 }
 
+.title{
+    width: 100%;
+}
+
 .h1T{
    color: #7a7a7a;
 }
@@ -43,7 +47,6 @@
 
 .contain{
     font-family: Poppins,sans-serif;
-
 }
 
 .title{
@@ -61,7 +64,7 @@
 
 .textP{
     color: #fff;
-   
+    padding: 10px;
 }
 
 .textP2{
@@ -107,5 +110,19 @@
     .imgc2{
         border-radius: 50px;
         width: auto;
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .contain{
+        text-align: center;
+    }
+
+    .space{
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
