@@ -32,16 +32,25 @@
 }
 
 .boxi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.boxi-h{
     margin: 50px;
     height: 300px;
     width: 200px;
     border-radius: 20px;
     background-color: #fff;
     filter: drop-shadow(5px 15px 100px rgba(109,109,109,.4));
-
 }
 
-
+/*.boxi-h:hover, .divimgh{
+    background-color: #4c40f7;
+    transition: all 1s ease-out;
+*/
 
 
 .divImg{
@@ -50,6 +59,8 @@
     margin-top:10px ;
     height: 100px;
 }
+
+
 .imgIcon{
     width: 50px;
     height: 50px;
@@ -87,3 +98,5 @@
 
     }
 }
+
+//.skill-card[_ngcontent-sbt-c34]:hover .card-text[_ngcontent-sbt-c34], .skill-card[_ngcontent-sbt-c34]:hover .card-title[_ngcontent-sbt-c34]
