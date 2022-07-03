@@ -52,6 +52,13 @@
     transition: all 1s ease-out;
 */
 
+.boxi4{
+    display: none;
+    &.active{
+        background-color: blue;
+    }
+}
+
 
 .divImg{
     display: flex;
