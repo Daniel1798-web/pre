@@ -12,9 +12,14 @@ export class SkillsComponent implements OnInit {
   vueText:string = "It's lightweight, fast, but I didn't like its syntax and the community is small, it was the first framework I learned";
   bugsText:string = "They accompany you from the first day. to exterminate them you have to learn to love them, or at least love the process to solve them. they just need love...";
 
+  acti = false
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  cli() {
+    this.acti = !this.acti
   }
 
 }

@@ -1,11 +1,11 @@
-<div class="dadSkills">
+<div class="dadSkills" >
     <div class="titleSkills">
         <h1 class="h1T">Skills</h1>
     </div>
-<section>
+<section >
     <div class="box-skills">
 
-    <div class="boxi boxi-h">
+    <div class="boxi boxi-h boxi4">
         <div></div>
         <div class="divImg">
             <img  class="imgIcon" src="../../../assets/shield-large.svg">
@@ -18,19 +18,19 @@
         </div>
      </div>
 
-        <div class="boxi boxi-h  ">
-            <div class="divImg">
-                <img  class="imgIcon" src="../../../assets/iconts2.png">
+        <div class="boxi boxi-h boxi4 " [class.active]="acti" (mouseover)="cli()" (mouseleave)="cli()">
+            <div class="divImg" >
+                <img   class="imgIcon" src="../../../assets/iconts2.png">
             </div>
             <div class="divTitle">
-                <h1 class="tih1">TypeScript</h1>
+                <h1 class="tih1" >TypeScript</h1>
             </div>
-            <div class="divText">
+            <div class="divText" >
                 <p>{{tsText}}</p>
             </div>
         </div>
     
-        <div class="boxi boxi-h">
+        <div class="boxi boxi-h boxi4">
             <div class="divImg div-imgh">
                 <img  class="imgIcon" src="../../../assets/icon3js.png">
             </div>
@@ -42,7 +42,7 @@
             </div>
         </div>
 
-        <div class="boxi boxi-h">
+        <div class="boxi boxi-h boxi4">
             <div class="divImg">
                 <img  class="imgIcon2" src="../../../assets/icon4vue.png">
             </div>
@@ -54,7 +54,7 @@
             </div>
         </div>
 
-        <div class="boxi boxi-h">
+        <div class="boxi boxi-h boxi4">
             <div class="divImg">
                 <img  class="imgIcon" src="../../../assets/no-bugs.png">
             </div>

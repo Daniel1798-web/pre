@@ -52,32 +52,71 @@
     transition: all 1s ease-out;
 */
 
-.boxi4{
-    display: none;
+.boxi4:active{
     &.active{
         background-color: blue;
     }
 }
 
+.boxi4:hover{
+    background-color: blue;
+    transition: 1s;
+
+}
+
+
+
+.boxi4:hover .tih1{
+    background-color: blue;
+    color: white;
+    transition: 1s;
+
+}
+
+.boxi4:hover .divText{
+    background-color: blue;
+    transition: 1s;
+
+}
+ 
+
+ 
+.boxi4:hover p{
+    background-color: blue;
+    color: white;
+    transition: 1s;
+}
+ 
+.boxi4:hover .imgIcon{
+}
+
+
+
+
+
 
 .divImg{
     display: flex;
     justify-content: center;
-    margin-top:10px ;
-    height: 100px;
-}
+    height: 60px;
+    width: 60px;
+    margin: 20px 0 20px;
+    align-items: center;
+    border-radius: 90px;
+    background-color: rgb(255, 255, 255);
+    }
+
+   
 
 
 .imgIcon{
-    width: 50px;
-    height: 50px;
-    margin-top: 20px;
+    width: auto;
+    height: 40px;
 }
 
 .imgIcon2{
-    width: 50px;
-    height: 43px;
-    margin-top: 20px;
+    width: auto;
+    height: 39px;
 }
 
 .divTitle{
@@ -90,23 +129,29 @@
     font-size: 20px;
 }
 
- .tih1::first-letter{
+ /*.tih1::first-letter{
     font-size: 22px;
     background-color: #af545400;
     box-shadow: inset 0px -3px 2px #838383;
-}
+}*/
 
 .divText{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-top:10px ;
+    margin-top:10px;
+    &.active{
+        background-color: blue;
+    }
 }
 
 .divText p{
     margin: 0 10px 10px;
     font-size: 14px;
     text-align: center;
+    &.active{
+        background-color:blue;
+    }
 }
 
 @media (max-width:540px){
