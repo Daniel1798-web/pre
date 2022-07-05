@@ -58,9 +58,8 @@ html,body{
     height: calc(50vh - 60px);
     width: 100%;
     display: flex;
-    animation-name: see;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;  
+    
+   
     }
 }
 
@@ -70,6 +69,11 @@ html,body{
     width: 100%;
     height: 200px;
     overflow: auto;
+}
+
+
+@keyframes col {
+   0%{opacity: 0;} 50%{opacity: 0.5;} 100%{opacity: 1;}
 }
 
 @keyframes see {0%{ height: 0px;}   }
