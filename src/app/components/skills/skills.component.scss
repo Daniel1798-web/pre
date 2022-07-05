@@ -86,6 +86,16 @@
     justify-content: center;
 }
 
+.tih1{
+    font-size: 20px;
+}
+
+ .tih1::first-letter{
+    font-size: 22px;
+    background-color: #af545400;
+    box-shadow: inset 0px -3px 2px #838383;
+}
+
 .divText{
     display: flex;
     justify-content: center;
