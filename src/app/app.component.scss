@@ -51,20 +51,7 @@ html,body{
 
 
 .section2{
-    color: blue;
-    
-    &.active{
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    flex-direction: column;
-    height: calc(50vh - 60px);
-    width: 100%;
-    display: flex;
-    
-   
-    }
+    padding-bottom: 100px;
 }
 
 .section2-div1{
@@ -122,6 +109,8 @@ html,body{
         padding-bottom: 0px;
 
     }
+
+  
 
     
 

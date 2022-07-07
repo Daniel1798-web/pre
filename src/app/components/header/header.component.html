@@ -25,7 +25,7 @@
 </div>
 
 
-<div class="side-menu" [class.active]="activeMenu">
+<div class="side-menu" *ngIf="activeMenu" [class.active]="activeMenu">
   <button class="xMobile" ></button>
   <div class="divSid">
   <ul class="ulSid">
