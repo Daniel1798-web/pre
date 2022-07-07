@@ -17,7 +17,15 @@
     
     <button class="contr">contrata</button>
 
-  
+    <div class="side-menu" *ngIf="activeMenu" [class.active]="activeMenu">
+      <div class="divSid">
+      <ul class="ulSid">
+        <li class="liSid"><a class="enlace" >Crear Stock</a></li>
+        <li class="liSid"><a class="enlace"  >Stock Guardados</a></li>
+        <li class="liSid"><a class="enlace" >Información</a></li>
+      </ul></div>
+      
+    </div>
 </header>
 
 
@@ -25,13 +33,3 @@
 </div>
 
 
-<div class="side-menu" *ngIf="activeMenu" [class.active]="activeMenu">
-  <button class="xMobile" ></button>
-  <div class="divSid">
-  <ul class="ulSid">
-    <li class="liSid"><a class="enlace" >Crear Stock</a></li>
-    <li class="liSid"><a class="enlace"  >Stock Guardados</a></li>
-    <li class="liSid"><a class="enlace" >Información</a></li>
-  </ul></div>
-  
-</div>
