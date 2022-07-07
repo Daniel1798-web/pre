@@ -18,8 +18,9 @@ export class ProyectsComponent implements OnInit {
     this.activoDad = true
   }
 
-  @HostListener('scroll', ['$event'])
-  onElementScroll(_$event: any) {
-  console.log( "esto"+_$event)
+  @HostListener("scroll", ['$event'])
+  doSomethingOnScroll($event:Event){
+    let scrollOffset = $event;
+    console.log("scroll: ", scrollOffset);
   }
 }

@@ -24,28 +24,33 @@ a{
     z-index: 5;
 }
 
-.nav-bar ul{
-    width: 100%;
+.navList{
     display: flex;
-    justify-content:space-around;
-    flex-direction: row;
-    margin: 0px;
-    padding: 0px;
+    justify-content: space-evenly;
+    width: 30%;
+    z-index: 5;
+}
+
+.navList a{
+    font-weight: 600;
+    color: #6b6b6b;
+    margin: 0 10px;
+    z-index: 5;
+}
+
+button{
+    border-style: none;
+    border-radius: 12px;
+    background: #4C40F7;
     height: 40px;
+    width: 110px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 5px;
 }
 
-.nav-bar ul li{
-    list-style: none;
-    padding: 5px;
-    font-size: 24px;
-}
 
 
-
-li:hover{
-    color: #09e1cd;
-
-}
 
 .patititaDiv{
     margin: 0;
