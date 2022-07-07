@@ -24,6 +24,10 @@ a{
     z-index: 5;
 }
 
+.mobile{
+    display: none;
+}
+
 .navList{
     display: flex;
     justify-content: space-evenly;
@@ -62,5 +66,27 @@ button{
     margin: 0;
     width: 100px;
     height: 100px;
+}
+
+@media (max-width:540px){
+
+    .navList{
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .patitita2{
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+    }
+
+    button{
+        display: none;
+    }
 }
 
