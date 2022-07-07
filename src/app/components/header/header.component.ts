@@ -9,7 +9,13 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
+  activeMenu = false
+
   ngOnInit(): void {
+  }
+
+  menu(){
+    this.activeMenu = !this.activeMenu
   }
 
 }

@@ -11,7 +11,7 @@
       <a href="#contact">Contact</a>
       <a href="#contact">About me</a>
     </nav>
-    <div class="mobile">
+    <div class="mobile" (click)="menu()">
       <img class="patitita2"  src="../../../assets/menu.png">
     </div>
     
@@ -20,7 +20,7 @@
 
 </div>
 
-<div class="menu">
+<div class="menu" [class.active]="activeMenu">
   <div class="box">
     <div class="menu-Box">
       <button>Skill</button>

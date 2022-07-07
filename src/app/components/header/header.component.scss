@@ -90,13 +90,21 @@ a{
     }
 
     .menu{
-        pointer-events: auto;
-        box-sizing: border-box;
-        z-index: 1000;
-        display: flex;
-        max-width: 100%;
-        max-height: 100%;
-        justify-content: flex-end;
+        display: none;
+        &.active{
+            pointer-events: auto;
+            box-sizing: border-box;
+            z-index: 1000;
+            display: flex;
+            max-width: 100%;
+            max-height: 100%;
+            justify-content: flex-end;
+        }
+       
+    }
+
+    .menu:hover{
+        cursor: pointer;
     }
 
     .box{
