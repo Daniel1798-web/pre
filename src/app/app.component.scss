@@ -126,8 +126,10 @@ html,body{
     
 
     .section12{
-        height:100vh;
-        justify-content: flex-start;
+        height:700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .section3{
