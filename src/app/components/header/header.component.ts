@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,13 +10,20 @@ export class HeaderComponent implements OnInit {
 
   constructor() { }
 
-  activeMenu = false
+  activeMenu:boolean = false;
+
+  activeTalk:boolean = false;
 
   ngOnInit(): void {
   }
 
   menu(){
     this.activeMenu = !this.activeMenu
+  }
+
+  talk(){
+    this.activeTalk = !this.activeTalk
+    
   }
 
 }

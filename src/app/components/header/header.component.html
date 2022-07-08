@@ -13,8 +13,11 @@
     <div class="mobile" (click)="menu()">
       <img class="patitita2"  src="../../../assets/menu.png">
     </div>
-    
-    <button class="contr">Hire Me</button>
+
+    <div class="contr2">
+      <button class="contr" (click)="talk()">Let's talk</button>
+
+    </div>
 
     <div class="side-menu" *ngIf="activeMenu" [class.active]="activeMenu">
       <div class="divSid">
@@ -22,9 +25,18 @@
         <li class="liSid"><a class="enlace" href="#skills" >Skills</a></li>
         <li class="liSid"><a class="enlace" href="#projects" >Projects</a></li>
         <li class="liSid"><a class="enlace" href="#contact">Contact</a></li>
-        <li class="liSid"><a class="enlace" >About Me</a></li>
+        <li class="liSid"><a class="enlace" >Let's talk</a></li>
 
       </ul></div>
+      
+    </div>
+
+    <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
+      <div class="divTalk">
+        <form>
+          <input type="text" placeholder="Message">
+        </form>
+      </div>
       
     </div>
 </header>
