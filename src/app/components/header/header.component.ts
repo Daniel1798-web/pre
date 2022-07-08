@@ -26,4 +26,9 @@ export class HeaderComponent implements OnInit {
     this.activeMenu = false
   }
 
+  backeando(){
+    this.activeTalk = false
+    
+  }
+
 }

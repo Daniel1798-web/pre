@@ -31,14 +31,21 @@
       
     </div>
 
-    <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
-      <div class="divTalk">
-        <form>
+  <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
+    <div class="divTalk">
+      <form class="formTalk">
+        <div class="buttonForm">
+          <button (click)="backeando()">Back</button>
+        </div>
+        <div class="inputsform">
           <input type="text" placeholder="Message">
-        </form>
-      </div>
-      
+
+        </div>
+      </form>
     </div>
+    
+  </div>
+   
 </header>
 
 

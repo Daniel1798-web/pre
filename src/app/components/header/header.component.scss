@@ -73,26 +73,40 @@ a:hover{
 }
 
 
+.dadTalk{
+    height: 1000px;
+    width: 100%;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    display: flex;
+    background-color: rgb(0 35 205 / 50%);
+    justify-content: center;
+}
+
 
 
 .side-Talk{
-  position: fixed;
-  margin-top: 70px;
   top: 0;
   right: 0;
-  background-color:whitesmoke;
-
+  margin-right: auto;
+  margin-left: auto;
+  transform: translateX(-0%) ;
+  background-color:rgb(0 134 229 / 50%);
+  position: fixed;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  box-shadow: 1px 3px 2px #e3dbdb;
-  transform: translateX(-100%);
-  transition: all ease-out .5s;
+  transition:  .5s !important;
   &.active{
-    transform: translateX(0);
-    transition: all ease-out .2s;
-    border-radius: 10px;
-    margin-top: 10px;
+    transition: 4s;
+    height: 100%;
+    width: 100%;
+    transform: translateX(0) ;
+
   }
 
 }
@@ -102,7 +116,28 @@ a:hover{
   display: flex;
   justify-content: center;
   height: 200px;
+  width: 200px;
+  margin: auto;
   padding: 0px;
+  box-shadow:  -6px 4px 20px #efefef, 7px -1px 17px 0px #efefef;
+
+}
+
+.formTalk{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+input{
+  height: auto;
+  width: auto;
+}
+
+.inputsform{
+  padding-top: 10px;
 }
 
 
