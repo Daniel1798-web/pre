@@ -22,6 +22,7 @@ a{
     justify-content: space-between;
     align-items: center;
     z-index: 5;
+    margin: 0px 40px;
 }
 
 .mobile{
@@ -73,6 +74,10 @@ a{
 }
 
 @media (max-width:540px){
+
+    .nav-bar{
+        margin: 0px;
+    }
 
     .navList{
         display: none;
