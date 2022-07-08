@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
 
   talk(){
     this.activeTalk = !this.activeTalk
-    
+    this.activeMenu = false
   }
 
 }
