@@ -15,6 +15,9 @@ html,body{
 
 .dad{
     margin: 20px auto;
+    &.active{
+        position: fixed;
+    }
 }
 
 .hijo{
@@ -87,6 +90,9 @@ html,body{
 @media (max-width: 840px){
     .dad{
         width: 100%;
+        &.active{
+            position: fixed;
+        }
     }
     .section1{
         height: auto;

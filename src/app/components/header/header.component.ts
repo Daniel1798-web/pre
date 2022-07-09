@@ -1,5 +1,5 @@
 import { ThisReceiver } from '@angular/compiler';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -14,6 +14,9 @@ export class HeaderComponent implements OnInit {
 
   activeTalk:boolean = false;
 
+  @Output()
+  propagar = new EventEmitter<boolean>() 
+
   ngOnInit(): void {
   }
 
@@ -24,6 +27,7 @@ export class HeaderComponent implements OnInit {
   talk(){
     this.activeTalk = !this.activeTalk
     this.activeMenu = false
+    this.propagar.emit(this.activeTalk)
   }
 
   backeando(){

@@ -8,4 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'pre';  
   
+  so:boolean = false
+
+  ngOnit(){
+    
+  }
+
+  co(mensaje:boolean){
+    this.so = mensaje
+  }
 }
