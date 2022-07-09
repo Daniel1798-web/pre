@@ -180,6 +180,10 @@ display: flex;
     justify-content: center;
 }
 
+.succes{
+  color: white;
+}
+
 .botonForm{
   width: 100px;
   height: 30px;
@@ -304,7 +308,7 @@ display: flex;
       }
 
       .divTalk{
-        height: 20%;
+        height: 50%;
         width: 90%;
       }
       
@@ -316,13 +320,29 @@ display: flex;
       }
 
       .inputPetit{
-        margin-bottom: 10px;
-
+        height: 20px;
+        width: 90%;
+        resize: none;
+        outline: none;
       }
-
+      
       .inputText{
-        height: 50px;
-        margin-bottom: 40px;
+        height: 100px;
+        width: 90%;
+        margin-bottom: 10px;
+        resize: none;
+        outline: none;
+      }
+      
+      .inputsform{
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-right: auto;
+        margin-left: auto;
+        height: 100%;
+        width: 100%s;
       }
       
       .ulSid{

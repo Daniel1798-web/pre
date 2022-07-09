@@ -44,7 +44,7 @@
         </div>
 
         <div class="inputsform">
-          <div *ngIf="enviado">Enviado con exito</div>
+          <div class="succes" *ngIf="enviado">Enviado con exito</div>
 
           <input type="text" [(ngModel)]="texto1"  placeholder="Name" name="nombre" class="inputPetit" required>
           <input type="email" [(ngModel)]="texto2" placeholder="Email" name="asunto" class="inputPetit"  required>
