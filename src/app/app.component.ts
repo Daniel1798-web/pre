@@ -7,14 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'pre';  
-  
+  activa = false
   so:boolean = false
 
-  ngOnit(){
+  ngOnit(){ 
+    this.co(this.so)
     
   }
-
   co(mensaje:boolean){
     this.so = mensaje
+    this.activa = !this.activa
   }
+ 
 }

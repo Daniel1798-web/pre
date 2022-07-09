@@ -1,4 +1,6 @@
 
+$colorin : rgb(1 91 255);
+
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #000000;
@@ -59,12 +61,12 @@
 
 .boxi4:active{
     &.active{
-        background-color: blue;
+        background-color: $colorin;
     }
 }
 
 .boxi4:hover{
-    background-color: blue;
+    background-color: $colorin;
     transition: 1s;
 
 }
@@ -72,14 +74,14 @@
 
 
 .boxi4:hover .tih1{
-    background-color: blue;
+    background-color: $colorin;
     color: white;
     transition: 1s;
 
 }
 
 .boxi4:hover .divText{
-    background-color: blue;
+    background-color: $colorin;
     transition: 1s;
 
 }
@@ -87,7 +89,7 @@
 
  
 .boxi4:hover p{
-    background-color: blue;
+    background-color: $colorin;
     color: white;
     transition: 1s;
 }
@@ -145,7 +147,7 @@
     flex-direction: column;
     margin-top:10px;
     &.active{
-        background-color: blue;
+        background-color: $colorin;
     }
 }
 
@@ -154,7 +156,7 @@
     font-size: 14px;
     text-align: center;
     &.active{
-        background-color:blue;
+        background-color:$colorin;
     }
 }
 

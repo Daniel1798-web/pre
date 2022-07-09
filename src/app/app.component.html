@@ -1,11 +1,11 @@
 
 
-      <app-header class="header" (propagar)="so"></app-header>
+      <app-header class="header" (propagar)="co($event)" ></app-header>
 
 
-<div class="dad" [class.active]="so">
+<div class="dad" >
 
-  <div class="hijo">
+  <div class="hijo" [class.active]="activa"  >
 <main>
 
     <section class="section1">
@@ -13,7 +13,7 @@
     </section>
 
 
-  <section class="section2" id="skills">
+  <section class="section2"  id="skills">
     
     <app-skills></app-skills>
    
