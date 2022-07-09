@@ -33,14 +33,22 @@
 
   <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
     <div class="divTalk">
-      <form class="formTalk">
+      <form class="formTalk" action="send.php" method="post" name="contacto" id="contacto">
         <div class="buttonForm">
           <button (click)="backeando()">Back</button>
         </div>
-        <div class="inputsform">
-          <input type="text" placeholder="Message">
 
+
+        <div class="titleH1">
+          <span class="span2"><h1>Hola tio</h1></span>
         </div>
+
+        <div class="inputsform">
+          <input type="Text" placeholder="Name" name="nombre" class="inputPetit">
+          <input type="email" placeholder="Email" name="email" class="inputPetit" >
+          <textarea type="text" class="inputText" name="mensaje" placeholder="Message" cols="5" rows="4"></textarea>
+        </div>
+        <input type="submit" value="Enviar formulario">
       </form>
     </div>
     

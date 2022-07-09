@@ -125,24 +125,48 @@ a:hover{
 
 .formTalk{
   display: flex;
-  justify-content: start;
+  justify-content: center;
   flex-direction: column;
+
   width: 100%;
   height: 100%;
   background-color: rgb(50 89 177 / 89%);
 }
 
-input{
+.inputPetit{
   height: 20px;
   width: 420px;
+  resize: none;
+  outline: none;
+}
+
+.inputText{
+  height: 100px;
+  width: 420px;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
 }
 
 .inputsform{
   padding-top: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
   height: 100%;
   width: 100%s;
+}
+
+.titleH1{
+display: flex;
+justify-content: center;
+color: white;
+}
+
+.span2{
+display: flex;
 }
 
 
@@ -270,6 +294,16 @@ input{
         justify-content: center;
         height: 200px;
         padding: 0px;
+      }
+
+      .inputPetit{
+        margin-bottom: 10px;
+
+      }
+
+      .inputText{
+        height: 50px;
+        margin-bottom: 40px;
       }
       
       .ulSid{
