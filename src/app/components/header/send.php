@@ -1,15 +1,12 @@
 <?php
-error_reporting(0);
 $nombre = $_POST['nombre'];
-$correo_electronico= $_POST['email'];
-$men = $_POST['mensaje'];
+$asunto = $_POST['asunto'];
+$mensaje = $_POST['mensaje'];
 
-
-$para = danrieloto@gmail.com;
-$asunto = 'pagina web';
-
-mail($para, $asunto, $men);
-
-echo 'mensaje enviado correctamente';
-
+echo $nombre. "ha dicho <br/>".$mensaje;
+if(mail('pp@pp.com', $asunto, $mensaje)){
+    echo "mail enviado";
+}else{
+    echo "uyuyuyuyuy";
+}
 ?>
