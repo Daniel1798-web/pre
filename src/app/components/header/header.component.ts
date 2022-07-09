@@ -1,7 +1,4 @@
-import { ThisReceiver } from '@angular/compiler';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule, HttpHeaders } from '@angular/common/http';
-
+import { NgModel } from '@angular/forms';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -10,9 +7,12 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  http: any;
 
   constructor() { }
+  texto1 = "";
+  texto2 = "";
+  texto3 = "";
+  enviado = false;
 
   activeMenu:boolean = false;
 
@@ -41,18 +41,15 @@ export class HeaderComponent implements OnInit {
   }
 
   
-  onSubmit(contactForm:any) {
-    if (contactForm.valid) {
-      const email = contactForm.value;
-      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-      this.http.post('https://formspree.io/asdlf7asdf',
-        { name: email.name, replyto: email.email, message: email.messages },
-        { 'headers': headers }).subscribe(
-          (          response: any) => {
-            console.log(response);
-          }
-        );
-    }
-  }
+
+  
+ verificar(){
+
+  this.texto1 = ""
+  this.texto2 = ""
+  this.texto3 = ""
+
+  this.enviado = true
+ }
 
 }

@@ -34,25 +34,28 @@
   <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
     <div class="divTalk">
 
-      <form class="formTalk"  action="https://formspree.io/f/xrgjwadn"
+      <form target="frame" class="formTalk"  action="https://formspree.io/f/xrgjwadn"
       method="POST" >
         <div class="buttonForm">
           <button (click)="backeando()">Back</button>
         </div>
-
         <div class="titleH1">
           <span class="span2"><h1>Hola tio</h1></span>
         </div>
 
         <div class="inputsform">
-          <input type="Text" placeholder="Name" name="nombre" class="inputPetit" required>
-          <input type="email" placeholder="Email" name="asunto" class="inputPetit"  required>
-          <textarea type="text" class="inputText" name="mensaje" placeholder="Message" cols="5" rows="4"></textarea>
+          <div *ngIf="enviado">Enviado con exito</div>
+
+          <input type="text" [(ngModel)]="texto1"  placeholder="Name" name="nombre" class="inputPetit" required>
+          <input type="email" [(ngModel)]="texto2" placeholder="Email" name="asunto" class="inputPetit"  required>
+          <textarea type="text" [(ngModel)]="texto3" class="inputText" name="mensaje" placeholder="Message" cols="5" rows="4"></textarea>
         </div>
-        <button type="submit"  value="Enviar formulario"></button>
+        <div class="divButton">
+          <button class="botonForm" type="submit" (click)="verificar()"  value="Enviar formulario">Enviar</button>
+        </div>
       </form>
     </div>
-    
+    <iframe class="escond" name="frame"></iframe>
   </div>
    
 </header>

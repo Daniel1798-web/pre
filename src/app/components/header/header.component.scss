@@ -1,3 +1,8 @@
+.escond{
+  display: none;
+}
+
+
 .spacer{ 
 width: 100%;
 display: flex;
@@ -167,6 +172,20 @@ color: white;
 
 .span2{
 display: flex;
+}
+
+.divButton{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.botonForm{
+  width: 100px;
+  height: 30px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: white;
 }
 
 
