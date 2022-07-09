@@ -1,4 +1,7 @@
 import { ThisReceiver } from '@angular/compiler';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule, HttpHeaders } from '@angular/common/http';
+
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -7,6 +10,7 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  http: any;
 
   constructor() { }
 
@@ -34,6 +38,21 @@ export class HeaderComponent implements OnInit {
     this.activeTalk = false
     this.propagar.emit(this.activeTalk)
 
+  }
+
+  
+  onSubmit(contactForm:any) {
+    if (contactForm.valid) {
+      const email = contactForm.value;
+      const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
+      this.http.post('https://formspree.io/asdlf7asdf',
+        { name: email.name, replyto: email.email, message: email.messages },
+        { 'headers': headers }).subscribe(
+          (          response: any) => {
+            console.log(response);
+          }
+        );
+    }
   }
 
 }
