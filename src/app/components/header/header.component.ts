@@ -1,7 +1,6 @@
 import { NgModel } from '@angular/forms';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MessageService } from '../../service/message.service';
-import swal from 'sweetalert';
 
 @Component({
   selector: 'app-header',
@@ -60,7 +59,7 @@ export class HeaderComponent implements OnInit {
  contactForm(form:any) {
   console.log("ss")
   this._MessageService.sendMessage(form).subscribe(()=>{
-    swal("formula", "enviado", 'succes')
+    alert("listo illo")
   })
   }
 
