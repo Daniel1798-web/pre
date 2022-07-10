@@ -34,7 +34,7 @@
   <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
     <div class="divTalk">
 
-      <form class="formTalk"  action="https://formspree.io/f/xrgjwadn" method="POST" >
+      <form class="formTalk"  >
         <div class="buttonForm">
          <img class="imgVolver" (click)="backeando()" src="../../../assets/volver.png">
         </div>
@@ -49,7 +49,7 @@
           <textarea type="text" [(ngModel)]="texto3" class="inputText" name="message" placeholder="Message" cols="5" rows="4"></textarea>
         </div>
         <div class="divButton">
-          <button class="botonForm"  type="submit">Enviar</button>
+          <button class="botonForm" value="Send"  type="submit">Enviar</button>
         </div>
       </form>
     </div>

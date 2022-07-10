@@ -18,6 +18,8 @@ export class HeaderComponent implements OnInit {
 
   activeTalk:boolean = false;
 
+
+
   @Output()
   propagar = new EventEmitter<boolean>() 
 
@@ -51,5 +53,7 @@ export class HeaderComponent implements OnInit {
 
   this.enviado = true
  }
+
+
 
 }
