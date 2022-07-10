@@ -58,7 +58,7 @@ export class HeaderComponent implements OnInit {
  }
 
  contactForm(form:any) {
-  console.log("s")
+  console.log("ss")
   this._MessageService.sendMessage(form).subscribe(()=>{
     swal("formula", "enviado", 'succes')
   })
