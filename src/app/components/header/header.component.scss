@@ -53,6 +53,7 @@ a:hover{
     font-weight: 600;
     color: #6b6b6b;
     margin: 0 10px;
+    font-size: 20px;
     z-index: 5;
 }
 
@@ -61,20 +62,22 @@ a:hover{
 }
 
 .contr{
-    border-style: none;
-    border-radius: 12px;
-    background: #4C40F7;
-    height: 40px;
-    width: 110px;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 5px;
+  border-style: none;
+  border-radius: 12px;
+  background: #4C40F7;
+  height: 40px;
+  width: 110px;
+  font-size: 15px;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
 .contr:hover{
-  width: 105px;
-  height: 35px;
-  cursor: pointer;
+    width: 105px;
+    height: 35px;
+    cursor: pointer;
+    box-shadow: 1px 3px 0px 0px #050320;
 }
 
 
@@ -130,7 +133,7 @@ a:hover{
 
 .buttonForm{
     width: 100%;
-    height: 40px;
+    height: 45px;
     margin: 0;
     padding: 0;
 }
@@ -138,6 +141,11 @@ a:hover{
 .imgVolver{
   width: 40px;
   margin: 10px;
+}
+
+.imgVolver:hover{
+  width: 45px;
+  cursor: pointer;
 }
 
 .formTalk{
@@ -155,6 +163,10 @@ a:hover{
   width: 420px;
   resize: none;
   outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+
 }
 
 .inputText{
@@ -163,6 +175,9 @@ a:hover{
   margin-bottom: 10px;
   resize: none;
   outline: none;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 .inputsform{
@@ -173,6 +188,7 @@ a:hover{
   margin-right: auto;
   margin-left: auto;
   height: 100%;
+  
 }
 
 .titleH1{
@@ -185,8 +201,15 @@ color: white;
 display: flex;
 }
 
+.span2 h1{
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 15px;
+}
+
 .divButton{
     width: 100%;
+    height: 40px;
     display: flex;
     justify-content: center;
 }
@@ -198,9 +221,16 @@ display: flex;
 .botonForm{
   width: 100px;
   height: 30px;
+  font-size: 20px;
   margin-bottom: 10px;
   border-radius: 5px;
   background-color: white;
+}
+
+.botonForm:hover{
+  width: 105px;
+  height: 35px;
+  box-shadow: 1px 4px 2px black;
 }
 
 
