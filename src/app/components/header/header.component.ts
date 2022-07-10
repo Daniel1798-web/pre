@@ -1,5 +1,7 @@
 import { NgModel } from '@angular/forms';
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { MessageService } from '../../service/message.service';
+import swal from 'sweetalert';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +10,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(public _MessageService: MessageService) { }
+  texto0 = "";
   texto1 = "";
   texto2 = "";
   texto3 = "";
@@ -46,7 +49,7 @@ export class HeaderComponent implements OnInit {
 
   
  verificar(){
-
+  
   this.texto1 = ""
   this.texto2 = ""
   this.texto3 = ""
@@ -54,6 +57,11 @@ export class HeaderComponent implements OnInit {
   this.enviado = true
  }
 
+ contactForm(form:any) {
+  this._MessageService.sendMessage(form).subscribe(()=>{
+    swal("formula", "enviado", 'succes')
+  })
+  }
 
 
 }

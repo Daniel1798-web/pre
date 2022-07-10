@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
-
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule} from '@angular/common/http'
+import { MessageService } from '../app/service/message.service';
+
+
 import { AppComponent } from './app.component';
 import { Part1Component } from './components/part1/part1.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -22,9 +25,10 @@ import { FoterComponent } from './components/foter/foter.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
