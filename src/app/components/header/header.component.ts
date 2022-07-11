@@ -56,9 +56,9 @@ export class HeaderComponent implements OnInit {
   this.enviado = true
  }
 
- contactForm(form:any) {
+ contactForm(t:any) {
   console.log("ss")
-  this._MessageService.sendMessage(form)
+  this._MessageService.sendMessage(t).subscribe(c => console.log(c))
   }
 
 
