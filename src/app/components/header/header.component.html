@@ -34,7 +34,7 @@
   <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
     <div class="divTalk">
 
-      <form class="formTalk" action="https://formspree.io/f/xrgjwadn"
+      <form class="formTalk" (ngSubmit)="contactForm(form)"
       method="POST" #form='ngForm'>
         <div class="buttonForm">
          <img class="imgVolver" (click)="backeando()" src="../../../assets/volver.png">
