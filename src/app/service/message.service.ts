@@ -7,4 +7,8 @@ constructor(private _http: HttpClient) { }
 sendMessage(textitos:any) {
  return this._http.post('https://back-pre.vercel.app/send-mail', textitos);
  }
+
+rec() {
+    return this._http.get('https://back-pre.vercel.app/products');
+    }
 }
