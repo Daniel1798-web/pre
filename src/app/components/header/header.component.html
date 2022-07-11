@@ -34,7 +34,8 @@
   <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
     <div class="divTalk">
 
-      <form class="formTalk" (ngSubmit)='contactForm(form.value)' #form='ngForm'>
+      <form class="formTalk" action="https://formspree.io/f/xrgjwadn"
+      method="POST" #form='ngForm'>
         <div class="buttonForm">
          <img class="imgVolver" (click)="backeando()" src="../../../assets/volver.png">
         </div>
@@ -44,10 +45,10 @@
 
         <div class="inputsform">
           <div class="succes" *ngIf="enviado">Enviado con exito</div>
-          <input type="text" [(ngModel)]="texto0"  placeholder="Name" name="nombre" class="inputPetit" required>
+          <input type="text" [(ngModel)]="texto0"  placeholder="Name" name="name" class="inputPetit" required>
           <input type="text" [(ngModel)]="texto1"  placeholder="Asunto" name="asunto" class="inputPetit" required>
-          <input type="email" [(ngModel)]="texto2" placeholder="Email" name="email" class="inputPetit"  required>
-          <textarea type="text" [(ngModel)]="texto3" class="inputText" name="mensaje" placeholder="Message" cols="5" rows="4"></textarea>
+          <input type="email" [(ngModel)]="texto2" placeholder="email" name="email" class="inputPetit"  required>
+          <textarea type="text" [(ngModel)]="texto3" class="inputText" name="message" placeholder="Message" cols="5" rows="4"></textarea>
         </div>
         <div class="divButton">
           <button class="botonForm"   type="submit">Enviar</button>
