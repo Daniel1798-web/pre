@@ -60,7 +60,7 @@ export class HeaderComponent implements OnInit {
   console.log("ss")
 
   this._MessageService.sendMessage(form).subscribe(data =>{
-    console.log(data)
+    console.log("exito")
   })
   
   }
