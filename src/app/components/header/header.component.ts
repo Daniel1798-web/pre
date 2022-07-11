@@ -58,9 +58,7 @@ export class HeaderComponent implements OnInit {
 
  contactForm(form:any) {
   console.log("ss")
-  this._MessageService.sendMessage(form).subscribe(()=>{
-    alert("listo illo")
-  })
+  this._MessageService.sendMessage(form)
   }
 
 
