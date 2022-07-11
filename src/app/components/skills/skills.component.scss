@@ -68,7 +68,7 @@ $colorin : rgb(1 91 255);
 .boxi4:hover{
     background-color: $colorin;
     transition: 1s;
-
+    filter: drop-shadow(5px 15px 5px rgba(10,19,19,.4));
 }
 
 
