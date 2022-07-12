@@ -60,7 +60,13 @@ export class HeaderComponent implements OnInit {
   console.log("ss")
 
   this._MessageService.sendMessage(form).subscribe(()=>{
-    console.log("exito")
+    try{
+      console.log("exito")
+
+    }
+    catch(error){
+      console.log(error + "falló")
+    }
   })
   
   }
