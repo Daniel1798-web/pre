@@ -48,12 +48,11 @@ export class HeaderComponent implements OnInit {
 
   
  verificar(){
-  
+  this.texto0 = ""
   this.texto1 = ""
   this.texto2 = ""
   this.texto3 = ""
 
-  this.enviado = true
  }
 
  contactForm(form:any) {
@@ -62,19 +61,11 @@ export class HeaderComponent implements OnInit {
   this._MessageService.sendMessage(form).subscribe(()=>{
     try{
       console.log("exito")
-      this.texto0  = ""
-      this.texto1 
-      this.texto2 
-      this.texto3 
-    
-      this.enviado = true
+      this.verificar()
     }
     catch(error){
       console.log(error + "falló")
-      this.texto0 = ""
-      this.texto1 = ""
-  this.texto2 = ""
-  this.texto3 = ""
+     this.verificar()
 
   
     }

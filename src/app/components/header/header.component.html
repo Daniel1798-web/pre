@@ -42,9 +42,9 @@
         <div class="titleH1">
           <span class="span2"><h1>Send a message</h1></span>
         </div>
+        <div class="succes" *ngIf="enviado">Enviado con exito</div>
 
         <div class="inputsform">
-          <div class="succes" *ngIf="enviado">Enviado con exito</div>
           <input type="text" [(ngModel)]="texto0"  placeholder="nombre" name="nombre" class="inputPetit" required ngModel >
           <input type="text"  [(ngModel)]="texto1" placeholder="asunto" name="asunto" class="inputPetit" required ngModel>
           <input type="email" [(ngModel)]="texto2" placeholder="email" name="email" class="inputPetit"  required ngModel>
