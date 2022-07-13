@@ -61,7 +61,7 @@ export class HeaderComponent implements OnInit {
   this._MessageService.sendMessage(form).subscribe(()=>{
     try{
       console.log("exito")
-      this.verificar()
+      this.co()
     }
     catch(error){
       console.log(error + "falló")
@@ -74,7 +74,7 @@ export class HeaderComponent implements OnInit {
   }
 
   co(){
-    this._MessageService.rec().subscribe(c => console.log())
+    this._MessageService.rec().subscribe(c => console.log(c))
   }
 
 
