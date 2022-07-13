@@ -5,8 +5,14 @@ import { Observable } from 'rxjs';
 @Injectable()
 export class MessageService {
 constructor(private _http: HttpClient) { }
-sendMessage(body:any){
- return this._http.post('https://back-pre.vercel.app/formulario', body);
+sendMessage(nombre:any,asunto:any,email:any,mensaje:any){
+    const obj = {
+        nombre: nombre,
+        asunto:asunto,
+        email: email,
+        mensaje: mensaje,
+      };
+ return this._http.post('https://back-pre.vercel.app/formulario', obj);
  }
 
 rec() {
