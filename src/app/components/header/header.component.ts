@@ -58,7 +58,7 @@ export class HeaderComponent implements OnInit {
  contactForm(form:any) {
   console.log("ss")
 
-  this._MessageService.sendMessage(this.texto0,this.texto1,this.texto2,this.texto3).subscribe(()=>{
+  this._MessageService.sendMessage(form).subscribe(()=>{
     try{
       console.log("exito")
       this.co()
