@@ -181,7 +181,6 @@ a:hover{
 }
 
 .inputsform{
-  padding-top: 10px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -212,10 +211,15 @@ display: flex;
     height: 40px;
     display: flex;
     justify-content: center;
+    margin-bottom: 5px;
+    flex-direction: column;
+    text-align: center;
 }
 
 .succes{
   color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .botonForm{
@@ -225,6 +229,8 @@ display: flex;
   margin-bottom: 10px;
   border-radius: 5px;
   background-color: white;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .botonForm:hover{
@@ -382,7 +388,7 @@ display: flex;
       .inputsform{
         padding-top: 10px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         flex-direction: column;
         margin-right: auto;
         margin-left: auto;

@@ -42,16 +42,16 @@
         <div class="titleH1">
           <span class="span2"><h1>Send a message</h1></span>
         </div>
-        <div class="succes" *ngIf="enviado">Enviado con exito</div>
 
         <div class="inputsform">
           <input type="text" [(ngModel)]="texto0"  placeholder="nombre" name="nombre" class="inputPetit" required ngModel >
           <input type="text"  [(ngModel)]="texto1" placeholder="asunto" name="asunto" class="inputPetit" required ngModel>
           <input type="email" [(ngModel)]="texto2" placeholder="email" name="email" class="inputPetit"  required ngModel>
-          <textarea type="text"[(ngModel)]="texto3"  class="inputText" name="mensaje" placeholder="Message" cols="5" rows="4" ngModel></textarea>
+          <textarea type="text"[(ngModel)]="texto3" (input)="verificar2()"  class="inputText" name="mensaje" placeholder="Message" cols="5" rows="4" ngModel></textarea>
         </div>
         <div class="divButton">
-          <button type="submit" class="botonForm">Enviar</button>
+          <h2 class="succes" *ngIf="enviado">Enviado con exito</h2>
+          <button  type="submit"  [disabled]="state" class="botonForm">Enviar</button>
         </div>
       </form>
     </div>

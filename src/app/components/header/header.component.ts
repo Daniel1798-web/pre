@@ -1,5 +1,5 @@
 import { NgModel } from '@angular/forms';
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
 import { MessageService } from '../../service/message.service';
 
 @Component({
@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   texto2 = "";
   texto3 = "";
   enviado = false;
+  state:boolean = true;
 
   activeMenu:boolean = false;
 
@@ -27,6 +28,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+
 
   menu(){
     this.activeMenu = !this.activeMenu
@@ -55,6 +58,15 @@ export class HeaderComponent implements OnInit {
 
  }
 
+ verificar2(){
+  if(this.texto0.length && this.texto1.length && this.texto2.length && this.texto3.length > 0){
+   return this.state = false
+  }
+  else{
+   return this.state = true
+  }
+ }
+
  contactForm(form:any) {
   console.log("ss")
 
@@ -62,6 +74,8 @@ export class HeaderComponent implements OnInit {
     try{
       console.log("exito")
       this.co()
+      this.verificar()
+      this.enviado = true
     }
     catch(error){
       console.log(error + "falló")
