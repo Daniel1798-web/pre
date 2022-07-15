@@ -11,7 +11,8 @@ export class SkillsComponent implements OnInit {
   jsText:string = "The first tool I learned in web development, with infinite uses, the most solid base";
   vueText:string = "It's lightweight, fast, but I didn't like its syntax and the community is small, it was the first framework I learned";
   bugsText:string = "They accompany you from the first day. to exterminate them you have to learn to love them, or at least love the process to solve them. they just need love...";
-  nodeText:string = "the power of js in the backend, mailing, data validation, magic, love it"
+  nodeText:string = "the power of js in the backend, mailing, data validation, magic, love it";
+  scssText:string = "It is super comfortable to work with this evolution of css, it cannot be missing on the front";
   acti = false
   constructor() { }
 
