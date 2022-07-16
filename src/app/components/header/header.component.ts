@@ -15,6 +15,7 @@ export class HeaderComponent implements OnInit {
   texto2 = "";
   texto3 = "";
   enviado = false;
+  enviadoErr = false;
   state:boolean = true;
 
   activeMenu:boolean = false;
@@ -79,7 +80,7 @@ export class HeaderComponent implements OnInit {
     }
     catch(error){
       console.log(error + "falló")
-     this.verificar()
+      this.enviadoErr = true;
 
   
     }
