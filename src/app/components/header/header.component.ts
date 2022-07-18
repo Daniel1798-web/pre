@@ -127,11 +127,14 @@ export class HeaderComponent implements OnInit {
   console.log("ss")
 
   this._MessageService.sendMessage(form).subscribe(()=>{
+   
+    //const i = document.getElementById('formularioId')
     try{
       console.log("exito")
       this.co()
       this.verificar()
       this.enviado = true
+     this.formu.reset()
     }
     catch(error){
       console.log(error + "falló")
