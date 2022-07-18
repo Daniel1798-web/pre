@@ -114,7 +114,7 @@ export class HeaderComponent implements OnInit {
 
  verificar2(){
   console.log("eje")
-  if(this.formucontrol.valid ){
+  if(this.formucontrol.valid && this.formucontrol2.valid && this.formucontrol3.valid && this.formucontrol4.valid){
 
    return this.state = false
   }
