@@ -114,8 +114,7 @@ export class HeaderComponent implements OnInit {
 
  verificar2(){
   console.log("eje")
-  if(this.fb.control.name.length > 0){
-    alert("holaa")
+  if(this.formucontrol.valid ){
 
    return this.state = false
   }
