@@ -166,7 +166,6 @@ a:hover{
   background-color: white;
   border: none;
   border-radius: 5px;
-
 }
 
 .inputText{
@@ -187,7 +186,7 @@ a:hover{
   margin-right: auto;
   margin-left: auto;
   height: 100%;
-  
+  width: 400px;
 }
 
 .titleH1{
@@ -252,8 +251,23 @@ display: flex;
     height: 100px;
 }
 
+.inM{
+  width: 100%;
+  
+}
 
+.error{
+  color: rgb(217, 255, 0);
+  margin: 0px;
+  font-size: 19px;
+}
 
+.ng-touched.ng-invalid:is(input, textarea),
+.ng-dirty.ng-invalid:is(input,textarea)
+{
+  outline: 2px solid red;
+  margin-bottom: 10px;
+}
 @media (max-width:720px){
   .divTalk{
     width: 90%;
@@ -262,6 +276,13 @@ display: flex;
 }
 
 @media (max-width:540px){
+
+  .ng-touched.ng-invalid:is(input, textarea),
+.ng-dirty.ng-invalid:is(input,textarea)
+{
+  outline: 2px solid red;
+  margin-bottom: 5px;
+}
 
     .nav-bar{
         margin: 0px;
@@ -368,7 +389,7 @@ display: flex;
 
       .inputPetit{
         height: 20px;
-        width: 100%;
+        width: 90%;
         resize: none;
         outline: none;
         background-color:white;
@@ -393,9 +414,18 @@ display: flex;
         margin-right: auto;
         margin-left: auto;
         height: 100%;
-        width: 100%s;
+        width: 50%;
+      }
+
+      .error{
+        color: rgb(217, 255, 0);
+        margin: 0px;
+        font-size: 14px;
       }
       
+      .inputText{
+        width: 90%;
+      }
       .ulSid{
         padding: 0px;
         list-style: none;

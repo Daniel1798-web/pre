@@ -1,4 +1,4 @@
-import { NgModel } from '@angular/forms';
+import { FormGroup,FormControl, NgModel, Validators, FormBuilder } from '@angular/forms';
 import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
 import { MessageService } from '../../service/message.service';
 
@@ -9,7 +9,29 @@ import { MessageService } from '../../service/message.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public _MessageService: MessageService) { }
+  
+  constructor(
+    public _MessageService: MessageService,
+    private fb:FormBuilder
+    ){ 
+      /*this.formulario = this.fb.group({
+        name :['', [Validators.required, Validators.maxLength(2)]],
+        asunto : ['', [Validators.required, Validators.minLength(4)]],
+        email : ['', [Validators.required, Validators.minLength(4)]],
+        mensaje : ['', [Validators.required, Validators.minLength(4)]]
+      })*/
+     
+    }
+
+    errores(){
+      this.formulario = this.fb.group({
+         name : new FormControl ('', [Validators.required, Validators.minLength(2)]),
+        asunto : ['', Validators.required,],
+        email : ['',  Validators.required],
+        mensaje : ['', Validators.required]
+      })
+    }
+
   texto0 = "";
   texto1 = "";
   texto2 = "";
@@ -18,16 +40,47 @@ export class HeaderComponent implements OnInit {
   enviadoErr = false;
   state:boolean = true;
 
+
+
   activeMenu:boolean = false;
 
   activeTalk:boolean = false;
 
+  nameField = new FormControl('soy un control');
+  formulario:any; 
+  formu = new FormGroup({
+    name : new FormControl ('', [Validators.required, Validators.minLength(2)]),
+    asunto : new FormControl ('', [Validators.required, Validators.minLength(2)]),
+    email : new FormControl ('', [Validators.required,Validators.email]),
+    mensaje : new FormControl ('', [Validators.required,Validators.minLength(2)]),
+  });
 
+  get formucontrol():FormControl{
+    return this.formu.get('name') as FormControl
+  }
+
+  get formucontrol2():FormControl{
+    return this.formu.get('asunto') as FormControl
+  }
+
+  get formucontrol3():FormControl{
+    return this.formu.get('email') as FormControl
+  }
+  get formucontrol4():FormControl{
+    return this.formu.get('mensaje') as FormControl
+  }
+
+
+  updateMa():void{
+    const control = this.formu.get('name') as FormControl;
+    
+  }
 
   @Output()
   propagar = new EventEmitter<boolean>() 
 
   ngOnInit(): void {
+   this.errores()
   }
 
 
@@ -60,7 +113,10 @@ export class HeaderComponent implements OnInit {
  }
 
  verificar2(){
-  if(this.texto0.length && this.texto1.length && this.texto2.length && this.texto3.length > 0){
+  console.log("eje")
+  if(this.fb.control.name.length > 0){
+    alert("holaa")
+
    return this.state = false
   }
   else{
@@ -92,5 +148,13 @@ export class HeaderComponent implements OnInit {
     this._MessageService.rec().subscribe(c => console.log(c))
   }
 
+  /*initFormParent():void{
+    this.formParent = new FormGroup({
+      name : new FormControl('', [Validators.required, Validators.minLength(4)]);
+      asunto : new FormControl('', [Validators.required, Validators.minLength(4)]);
+      email : new FormControl('', [Validators.required, Validators.minLength(4)]);
+      mensaje : new FormControl('', [Validators.required, Validators.minLength(4)]);
+    })
+  }*/
 
 }
