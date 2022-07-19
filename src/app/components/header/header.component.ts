@@ -98,6 +98,7 @@ export class HeaderComponent implements OnInit {
   backeando(){
     this.activeTalk = false
     this.propagar.emit(this.activeTalk)
+    this.formu.reset()
 
   }
 
