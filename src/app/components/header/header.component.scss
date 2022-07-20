@@ -166,6 +166,7 @@ a:hover{
   background-color: white;
   border: none;
   border-radius: 5px;
+  cursor:red;
 }
 
 .inputText{
@@ -177,6 +178,7 @@ a:hover{
   background-color: white;
   border: none;
   border-radius: 5px;
+  caret-color: blue;
 }
 
 .inputsform{
@@ -187,6 +189,7 @@ a:hover{
   margin-left: auto;
   height: 100%;
   width: 400px;
+  caret-color: blue;
 }
 
 .titleH1{
@@ -267,6 +270,7 @@ display: flex;
 {
   outline: 2px solid red;
   margin-bottom: 10px;
+  caret-color: red;
 }
 @media (max-width:720px){
   .divTalk{

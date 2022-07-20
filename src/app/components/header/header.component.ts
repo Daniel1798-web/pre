@@ -132,7 +132,6 @@ export class HeaderComponent implements OnInit {
     //const i = document.getElementById('formularioId')
     try{
       console.log("exito")
-      this.co()
       this.verificar()
       this.enviado = true
      this.formu.reset()

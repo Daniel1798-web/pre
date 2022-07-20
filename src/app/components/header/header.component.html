@@ -34,7 +34,7 @@
   <div class="side-Talk" *ngIf="activeTalk"  [class.active]="activeTalk">
     <div class="divTalk">
 
-      <form class="formTalk" id="formularioId"  [formGroup]="formu" (ngSubmit)="contactForm(form.value)"
+      <form class="formTalk" id="formularioId"  [formGroup]="formu" (ngSubmit)="contactForm(formu.value)"
       method="POST" #form='ngForm'>
         <div class="buttonForm">
          <img class="imgVolver" (click)="backeando()" src="../../../assets/volver.png">
@@ -52,9 +52,10 @@
    
           
           <div class="inM">
-            <input type="text" [(ngModel)]="texto1"  formControlName="asunto"    placeholder="Issue" name="asunto" class="inputPetit" >
+            <input type="text"   [(ngModel)]="texto1"  formControlName="asunto"    placeholder="Issue" name="asunto" class="inputPetit" >
             <span class="error"   *ngIf="formucontrol2.invalid && (formucontrol2.touched || formucontrol2.dirty)">
               The Issue must contain more than 2 characters </span>
+        
           </div>
           
           <div class="inM">
