@@ -1,6 +1,7 @@
 import { FormGroup,FormControl, NgModel, Validators, FormBuilder } from '@angular/forms';
 import { Component, OnInit, Output, EventEmitter, } from '@angular/core';
 import { MessageService } from '../../service/message.service';
+import { VisitCountService } from 'src/app/service/visit-count.service';
 
 @Component({
   selector: 'app-header',
@@ -12,7 +13,8 @@ export class HeaderComponent implements OnInit {
   
   constructor(
     public _MessageService: MessageService,
-    private fb:FormBuilder
+    private fb:FormBuilder,
+    private visitCount: VisitCountService
     ){ 
       /*this.formulario = this.fb.group({
         name :['', [Validators.required, Validators.maxLength(2)]],
@@ -81,6 +83,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
    this.errores()
+   this.prueba()
+   this.prueba2()
   }
 
 
@@ -102,7 +106,32 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  
+  prueba(){
+    this.visitCount.visitCount().subscribe((res:any)=>{
+      (data:any)=>{
+        console.log(data)
+        console.log(res)
+
+      }
+      (error:any)=>{
+        console.log(error)
+      }
+    })
+    console.log("hola")
+  }
+  prueba2(){
+    this.visitCount.ruta().subscribe((res:any)=>{
+      (data:any)=>{
+        console.log(data)
+        console.log(res)
+
+      }
+      (error:any)=>{
+        console.log(error)
+      }
+    })
+    console.log("hola")
+  }
 
   
  verificar(){
