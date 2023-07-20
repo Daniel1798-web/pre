@@ -18,6 +18,6 @@ export class VisitCountService {
       }
 
       ruta() {
-        return this.http.get('https://backendportfolio-production-6b35.up.railway.app/visitas');
+        return this.http.post('https://backendportfolio-production-6b35.up.railway.app/visitas', "nada");
         }
 }
