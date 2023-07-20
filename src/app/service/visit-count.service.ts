@@ -14,10 +14,12 @@ export class VisitCountService {
     }*/
 
     visitCount() {
-      return this.http.get('https://backendportfolio-production-6b35.up.railway.app/create');
+      return this.http.get('https://backendportfolio-production-6b35.up.railway.app/traervisitas');
       }
 
       ruta() {
         return this.http.get('https://backendportfolio-production-6b35.up.railway.app/visitas');
         }
+      
+
 }
