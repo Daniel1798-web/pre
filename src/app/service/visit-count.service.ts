@@ -14,10 +14,10 @@ export class VisitCountService {
     }*/
 
     visitCount() {
-      return this.http.get('https://back-pre.vercel.app/visitas');
+      return this.http.get('https://backendportfolio-production-6b35.up.railway.app/create');
       }
 
       ruta() {
-        return this.http.get('https://back-pre.vercel.app/ruta');
+        return this.http.get('http://localhost:3000/ruta');
         }
 }
