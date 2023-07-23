@@ -41,7 +41,7 @@ export class HeaderComponent implements OnInit {
   enviado = false;
   enviadoErr = false;
   state:boolean = true;
-
+  showVisits:Array<object> = [];
 
 
   activeMenu:boolean = false;
@@ -83,8 +83,8 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
    this.errores()
-   this.prueba()
-   this.prueba2()
+   this.mandarVisita()
+   this.ContadorVisita()
   }
 
 
@@ -106,32 +106,20 @@ export class HeaderComponent implements OnInit {
 
   }
 
-  prueba(){
-    this.visitCount.visitCount().subscribe((res:any)=>{
-      (data:any)=>{
-        console.log(data)
-        console.log(res)
-
+  ContadorVisita() {
+    this.visitCount.visitCount().subscribe(
+      (data: any) => {
+        console.log(data);
+        this.showVisits = data
+        console.log(this.showVisits.length)
+      },
+      (error: any) => {
+        console.log(error);
       }
-      (error:any)=>{
-        console.log(error)
-      }
-    })
-    console.log("hola")
+    );
   }
-  prueba2(){
-    this.visitCount.ruta().subscribe((res:any)=>{
-      (data:any)=>{
-        console.log(data)
-        console.log(res)
-
-      }
-      (error:any)=>{
-        console.log(error)
-      }
-    })
-    console.log("hola")
-  }
+  mandarVisita() { this.visitCount.mandarVisita().subscribe() }
+  
 
   
  verificar(){

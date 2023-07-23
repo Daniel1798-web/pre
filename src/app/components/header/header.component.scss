@@ -64,21 +64,23 @@ a:hover{
 .contr{
   border-style: none;
   border-radius: 12px;
-  background: #4C40F7;
-  height: 40px;
-  width: 110px;
+  background: #56c1ff;
+  width: 105px;
+  height: 35px;
+  cursor: pointer;
+  box-shadow: 1px 3px 0px 0px #050320;
   font-size: 15px;
   color: #fff;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 0px;
 }
 
 .contr:hover{
-    width: 105px;
-    height: 35px;
-    cursor: pointer;
-    box-shadow: 1px 3px 0px 0px #050320;
+  height: 45px;
+  transition: 50ms;
 }
+
+
 
 
 .dadTalk{
@@ -444,6 +446,7 @@ display: flex;
       .liSid{
         margin-bottom: 20px;
         text-align: center;
+        list-style: none;
       }
       
       .logo {
@@ -516,6 +519,44 @@ display: flex;
           }
         }
       }
+}
+
+
+
+
+
+.visitBox{
+  display: flex;
+  margin-top: 11%;
+  text-align: center;
+  justify-content: center;
+  border-radius: 38px;
+  margin-left: 100%;
+  color: white !important;
+  width: 106px;
+  height: 42px;
+  position: absolute;
+  box-shadow: 0px 3px 2px #424242, 1px 3px 2px 0px #000000;
+  background: #13a700;
+  transform: translate(-188px, -93px);
+
+    p{
+      color: white;
+      margin-top: auto ;
+      margin-bottom: auto;
+    }
+    a{
+      color: white;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 15px;
+    }
+}
+
+.visitBox:hover{
+  height: 50px;
+  transition: 100ms;
+  cursor: pointer;
 }
 
 @media (max-width:290px){
