@@ -21,7 +21,7 @@ a{
 }
 
 a:hover{
-  color: #2890cd !important;
+  color: #2890cd ;
 }
 
 .nav-bar{
@@ -274,6 +274,15 @@ display: flex;
   margin-bottom: 10px;
   caret-color: red;
 }
+
+
+@media (max-width:950px){
+  .visitBox{
+    margin-top: 3% !important;
+    transform: translate(-188px, -0px) !important;
+
+  }
+}
 @media (max-width:720px){
   .divTalk{
     width: 90%;
@@ -281,7 +290,26 @@ display: flex;
   }
 }
 
+@media (max-width: 640px){
+
+  .contr2{
+    width: auto;
+  }
+  .visitBox{
+    margin-top: 3% !important;
+    transform: translate(-140px, -0px) !important;
+    
+  }
+}
+
 @media (max-width:540px){
+
+  .visitBox{
+    margin-top: 2% !important;
+    margin-left: 72% !important;
+    transform: translate(-0px, -0px) !important;
+    
+  }
 
   .ng-touched.ng-invalid:is(input, textarea),
 .ng-dirty.ng-invalid:is(input,textarea)
@@ -521,7 +549,12 @@ display: flex;
       }
 }
 
-
+@media (max-width:420px){
+  .visitBox{
+    margin-left: 38% !important;
+    margin-top: 10% !important;
+  }
+}
 
 
 
@@ -557,6 +590,14 @@ display: flex;
   height: 50px;
   transition: 100ms;
   cursor: pointer;
+
+  a{
+    color: white;
+  }
+}
+
+.tex:hover{
+  color: rgb(18, 230, 238) !important;
 }
 
 @media (max-width:290px){

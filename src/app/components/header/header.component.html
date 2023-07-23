@@ -6,9 +6,9 @@
 <header class="nav-bar">
   <a href="/"><img class="patitita" src="../../../assets/d.png"></a>
   <nav class="navList">
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a  class="tex" href="#skills">Skills</a>
+      <a class="tex" href="#projects">Projects</a>
+      <a class="tex" href="#contact">Contact</a>
     </nav>
     <div class="mobile" (click)="menu()">
       <img class="patitita2"  src="../../../assets/menu.png">
@@ -26,7 +26,6 @@
         <li class="liSid"><a class="enlace" href="#projects" >Projects</a></li>
         <li class="liSid"><a class="enlace" href="#contact">Contact</a></li>
         <li class="liSid"><a class="enlace" (click)="talk()">Let's talk</a></li>
-        <li class="liSid" ><a class="enlace">{{showVisits.length}}</a></li>
 
       </ul></div>
       
@@ -92,6 +91,6 @@
 </div>
 <div class="visitBox">
   <p class="text-visits">Visits</p>
-  <a class="enlace">{{showVisits.length}}</a>
+  <a >{{showVisits.length}}</a>
 </div>
 

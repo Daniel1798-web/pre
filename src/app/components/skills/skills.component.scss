@@ -97,6 +97,7 @@ $colorin : rgb(1 91 255);
 
 
 
+
 .divImg{
     display: flex;
     justify-content: center;
@@ -114,6 +115,12 @@ $colorin : rgb(1 91 255);
 .imgIcon{
     width: auto;
     height: 40px;
+}
+
+.mysql{
+    width: auto;
+    height: 53px;
+    border-radius: 25px;
 }
 
 .imgIcon2{
