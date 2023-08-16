@@ -117,6 +117,8 @@ export class HeaderComponent implements OnInit {
         console.log(error);
       }
     );
+
+
   }
   mandarVisita() { this.visitCount.mandarVisita().subscribe() }
   

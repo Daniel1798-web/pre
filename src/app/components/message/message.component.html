@@ -1,0 +1,37 @@
+<div class="dad">
+    <div class="spinerdad" *ngIf="spinner"><div class="spinner"></div></div>
+
+    <div class="boxContent">
+        <img  [ngClass]="{'arrowHide': contador  === 0}" class="leftArrow" src="../../../assets/right-arrow.png" (click)="changeImgLeft()">
+
+        <img class="imgUser"  [ngClass]="{'hideImg': contador  != 0}" [src]="userImg" (click)="openFileInput()">
+        <img class="imgUser"  [ngClass]="{'hideImg': contador  != 1}" src="assets/avatar1.png">
+        <img class="imgUser"  [ngClass]="{'hideImg': contador  != 2}" src="assets/avatar2.png">
+        <img class="imgUser"  [ngClass]="{'hideImg': contador  != 3}" src="assets/avatar3.png">
+        <img class="imgUser"  [ngClass]="{'hideImg': contador  != 4}" src="assets/avatar4.png">
+
+        <h3 class="titleImg" *ngIf="contador === 0 && userImg === 'assets/imagenU.png'" (click)="openFileInput()">Upload you Avatar or chose one</h3> 
+        <h3 class="titleImg" *ngIf="contador === 0 && secondText === true" (click)="openFileInput()">Click if you want Change</h3> 
+        <h3 class="titleImg" *ngIf="contador === 1" style="color: white; margin-top: 33px;">Look smart!</h3> 
+        <h3 class="titleImg" *ngIf="contador === 2">this is cool</h3> 
+
+        <img [ngClass]="{'arrowHide': contador  === 4}" class="rigthArrow" src="../../../assets/right-arrow.png" (click)="changeImgRigth()">
+        <input type="file" id="fileInput"  accept="image/jpg, image/jpeg, image/png"  style="display: none;" (change)="onFileSelected($event)">
+        
+        <div class="form">
+            <h3 class="succesMessage" *ngIf="mensajeSucces">Message sent successfully!</h3> 
+            <h3 class="succesMessage" *ngIf="errorMessage.length > 0 ">{{errorMessage}}</h3> 
+
+            <div class="infoUser">
+                <label>Name</label>
+                <input type="text"[(ngModel)]="nameUser" maxlength="25">
+            </div>
+
+            <div class="comentUser">
+                <label>Opinion : D</label>
+                <textarea name="" id="" cols="30" rows="10"  [(ngModel)]="opinionUser" maxlength="180"></textarea>
+            </div>
+        </div>
+        <button (click)="sendOpinion()" [disabled]="nameUser == '' && opinionUser == '' ">Enviar</button>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="title1">
+    <h1 class="h1T"  [ngClass]="{'h2Hide' : opinion === false   }" (click)="shareOpinion('opinionClick')">Opinions</h1>
+    <h1 class="h1T" [ngClass]="{'h1Hide' : opinion   }" (click)="shareOpinion('shareClick')">Share you opinion</h1>
+</div>
+
+<div style="display: flex;">
+
+    <app-message *ngIf="opinion === false" style="width: 100%;"></app-message>
+
+<div class="dad" *ngIf="opinion" >
+
+    <img src="../../../assets/left-arrow.png" class="arrowL" (click)="prev()">
+
+<div  class="childBox" #scroleable>
+    <div class="spinerdad" *ngIf="opinions.length === 0"><div class="spinner"></div></div>
+
+    <div class="boxContent" *ngFor="let user of opinions">
+            <div class="userIdentification">
+                <img *ngIf="user.avatar === 0" class="imgUser"  [ngClass]="{'hideImg': contador  != 0}" [src]="'data:image/png;base64,' + user.picUser" (click)="openFileInput()">
+                <img *ngIf="user.avatar > 0" class="imgUser"   [src]="avatares[user.avatar]" (click)="openFileInput()">
+
+                <h2>{{user.nombre}}</h2>
+            </div>
+
+            
+            
+        <div class="form">
+            <div class="comentUser">
+                <label>Opinion</label>
+                <p >{{user.opinion}}</p>
+            </div>
+        </div>
+  
+    </div>
+
+
+
+</div>
+<img src="../../../assets/left-arrow.png"  class="arrowR" (click)="next()"> 
+
+</div>
+
+
+</div>
+

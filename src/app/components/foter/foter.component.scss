@@ -1,16 +1,49 @@
 .footer{
-    background-color: #d9d9d9;
-    height: 1rem;
-    margin-top: -50px;
-    padding: 80px 25px 35px;
-    display: flex;
-    align-items: center;
+  background-color: #56c1ff;
+  height: 100%;
+  padding: 8px 25px 35px;
+  box-shadow: 0px 0px 2px 2px #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
 }
 
+.footer-opinion{
+  background-color: #56c1ff;
+  height: 100%;
+  padding: 8px 25px 35px;
+  box-shadow: 0px 0px 2px 2px #050505;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 1s;
+}
 
 .space{
     width: 80%;
     border-bottom: 3px solid #ffffff;
+}
+
+.rateButton{
+  width: 100%;
+  height: 40px;
+
+  img{
+    width: 35px;
+    height: 30px;
+  }
+
+  h2:hover{
+    cursor: pointer;
+    color: white;
+  }
+
+  img:hover{
+    width: 40px;
+    height: 35px;
+    cursor: pointer;
+  }
 }
 
 .cos{
@@ -23,13 +56,98 @@
 }
 
 .images{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* margin-bottom: 15px; */
+  /* bottom: 45px; */
+  animation: slideRight 0.5s;
+
+}
+
+.images-out{
+  opacity: 0;
+  display: none;
+  visibility: visible;
+
+  // Definir la animación con nombre "miAnimacion"
+  animation: slideImages 0.5s;
+
+  @keyframes slideImages {
+    from {
+      opacity: 1; 
+      right:  0;
+      display: flex;
+    }
+    to {
+      display: none;
+      opacity: 0; 
+      right:  -100%;
+
+    }
+    100% {
+      visibility: hidden;
+    }
+  }
+
 }
 
 .imgG{
+    width: 40px;
     margin: 10px;
     border-radius: 50px;
     box-shadow: 0px 3px 2px #080808;
 }
+
+
+
+  .opinion {
+    display: flex;
+    position: relative;
+    width: 100%;
+
+    animation: slideRight 0.5s;
+  }
+
+  .opinions
+  {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    width: 100%;
+    animation: slideRight 0.5s;
+  }
+
+  .componentMessage{
+    width: 100%;
+  }
+
+  .component-opinion{
+    display: flex;
+    position: relative;
+    width: 100%;
+    animation: slideLeft 0.5s;
+  }
+
+  @keyframes slideRight {
+    from { left: -100%; }
+    to { left: 0; }
+  }
+
+  
+  @keyframes slideLeft {
+    from {
+      opacity: 1; 
+      right:  0;
+      display: flex;
+    }
+    to {
+      display: none;
+      opacity: 0; 
+      right:  -100%;
+
+    }
+    100% {
+      visibility: hidden;
+    }
+  }

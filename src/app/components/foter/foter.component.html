@@ -1,11 +1,27 @@
-<div class="footer">
-    <div class="images">
+<div class="footer"  [ngClass]="{'footer-opinion': opinion}">
+    <div class="images"  >
         <a target="_blank" class="aa" href="https://github.com/Daniel1798-web"><img class="imgG" src="../../../assets/g.png"></a>
         <a target="_blank" class="aa" href="https://www.linkedin.com/in/daniel-oto-diaz-45282a21b/"><img class="imgG" src="../../../assets/l.png"></a> 
         <a target="_blank" class="aa" href="https://wa.me/543516838934"><img class="imgG" src="../../../assets/w.png"></a>  
 
     </div>
+    <!--<div class="rateButton">
+        <h2 *ngIf="opinion === false"   [ngClass]="{'images-out': outImages}" (click)="showOpinion()">Want share your opinion? </h2>
+        <img *ngIf="opinion" src="assets/volver.png" (click)="showOpinion()">
+    </div>-->
+    <!--<div class="opinions" >
+        <app-message  class="componentMessage"></app-message>
+        <app-opinions></app-opinions>
+    </div>-->
+
  
-   
+  
+     
+<!--<div class="opinion" *ngIf="opinion"  [ngClass]="{'component-opinion': outOpinion}">
+    <app-message class="componentMessage"  (showOpinionComponent)="opinion = $event"></app-message>
+</div>-->
+
+
    
 </div>
+

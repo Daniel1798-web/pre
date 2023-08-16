@@ -12,6 +12,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { FoterComponent } from './components/foter/foter.component';
+import { MessageComponent } from './components/message/message.component';
+import { OpinionsComponent } from './components/opinions/opinions.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import { FoterComponent } from './components/foter/foter.component';
     SkillsComponent,
     ProyectsComponent,
     FoterComponent,
+    MessageComponent,
+    OpinionsComponent,
   ],
   imports: [
     BrowserModule,
