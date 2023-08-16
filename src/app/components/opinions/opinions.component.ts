@@ -19,6 +19,7 @@ export class OpinionsComponent implements OnInit {
   shareOpinion(click:any){
     if(click === 'opinionClick'){
       this.opinion = true
+    this.refreshOpinions()
 
     }else{
       this.opinion = false
