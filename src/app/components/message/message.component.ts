@@ -78,6 +78,7 @@ export class MessageComponent implements OnInit {
 
     this.visitCount.mandarOpinion(data).subscribe(
       (response: any) => {
+        this.showOpinionComponent.emit(true)
         this.spinner = false;
 
         // Aquí manejas la respuesta exitosa si es necesario
@@ -86,7 +87,7 @@ export class MessageComponent implements OnInit {
         this.userImg = "assets/imagenU.png";
         this.nameUser = "";
         this.opinionUser = "";
-    
+        this.contador = 0;
         setTimeout(() => {
           this.mensajeSucces = false;
         }, 3000);
@@ -148,5 +149,6 @@ export class MessageComponent implements OnInit {
       reader.readAsDataURL(blob);
     });
   }
+
 
 }

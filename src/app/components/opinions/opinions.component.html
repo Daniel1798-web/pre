@@ -5,7 +5,7 @@
 
 <div style="display: flex;">
 
-    <app-message *ngIf="opinion === false" style="width: 100%;"></app-message>
+    <app-message *ngIf="opinion === false" (showOpinionComponent)="refreshOpinions()" style="width: 100%;"></app-message>
 
 <div class="dad" *ngIf="opinion" >
 

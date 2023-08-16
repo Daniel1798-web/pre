@@ -110,6 +110,34 @@ export class OpinionsComponent implements OnInit {
   
   }
 
-
+  refreshOpinions(){
+    try {
+      this.visitCount.opinionData().subscribe(
+        (data: any) => {
+          console.log(data);
+  
+          data.forEach(async (item: any) => {
+            const arrayBufferView = new Uint8Array(item.picUser.data);
+            const blob = new Blob([arrayBufferView], { type: 'image/png' });
+  
+            const reader = new FileReader();
+            reader.onload = function(event) {
+              item.picUser = event.target?.result;
+              item.picUser = item.picUser.replace(/^data:image\/\w+;base64,/, '')
+            };
+            reader.readAsDataURL(blob);
+          });
+  
+          console.log(data);
+          this.opinions = data;
+        },
+        (error: any) => {
+          console.error('Error fetching or processing data:', error);
+        }
+      );
+    } catch (error) {
+      console.error('An error occurred:', error);
+    }
+  }
 
 }
