@@ -16,8 +16,10 @@
 
     <div class="boxContent" *ngFor="let user of opinions">
             <div class="userIdentification">
-                <img *ngIf="user.avatar === 0" class="imgUser"  [ngClass]="{'hideImg': contador  != 0}" [src]="'data:image/png;base64,' + user.picUser" (click)="openFileInput()">
+                <img *ngIf="user.avatar === 0 && user.picUser != 'assets/imagenUpn'" class="imgUser"  [ngClass]="{'hideImg': contador  != 0}" [src]="'data:image/png;base64,' + user.picUser" (click)="openFileInput()">
                 <img *ngIf="user.avatar > 0" class="imgUser"   [src]="avatares[user.avatar]" (click)="openFileInput()">
+                <img *ngIf="user.picUser === 'assets/imagenUpn' " class="imgUser"   src="assets/imagenU.png" (click)="openFileInput()">
+
 
                 <h2>{{user.nombre}}</h2>
             </div>
