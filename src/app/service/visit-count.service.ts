@@ -19,7 +19,7 @@ export class VisitCountService {
       }
 
       mandarVisita() {
-        return this.http.get('https://backendportfolio-production-6b35.up.railway.app/traervisitas');
+        return this.http.get('https://backendportfolio-production-6b35.up.railway.app/visitas');
       }
       
       mandarOpinion(data:any): Observable<any>{
